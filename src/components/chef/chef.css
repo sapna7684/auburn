@@ -1,0 +1,4 @@
+strong{font-family: 'PT Sans', sans-serif; padding-bottom: .5rem; display: block;}
+blockquote{font-size: 18px; padding-bottom: 30px; padding-left: 25px; font-family: 'Questrial', sans-serif; position: relative;}
+blockquote::before{position: absolute; content: '"'; font-size: 65px; top: -10px; left: 0; color: #3c434e;}
+blockquote::after{position: absolute; content: '"'; font-size: 65px; bottom: -10px; right: 0; color: #3c434e;}

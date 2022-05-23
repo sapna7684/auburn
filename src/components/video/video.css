@@ -1,0 +1,4 @@
+.videoPlayer{height: 100vh; position: relative;}
+.videoPlayer video{width: 100%; height: 100%; object-fit: cover;}
+.videoPlayer::before{position: absolute; content: ""; background-color: rgba(0,0,0,.35); inset: 0;}
+.videoPlayer .playButton{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 100px; color: #fff; cursor: pointer;}

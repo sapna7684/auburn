@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,a:hover{
+  text-decoration: none;
+}
+.container-fluid{
+  max-width:100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.d-flex{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.content-wrapper{
+  flex: 50%;
+  padding: 0 15px;
+}
+.text-right{
+  text-align: right;
+}
+.p-2{padding: 4rem 0;}
+
+button{
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3c434e;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+button:hover{
+  background-color: transparent;
+  border-color: #3c434e;
+  color: #3c434e;
+}
+
+button.btn-secondary{
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 50px;
+}
+button.btn-secondary:hover{
+  background-color: #fff;
+  color: #3c434e;
+}
+.align-center{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h2{font-size: 36px; font-weight: 700; padding-bottom: 30px; font-family: 'PT Sans', sans-serif;}
+p{font-size: 18px; padding-bottom: 30px; font-family: 'Questrial', sans-serif;}
+.container{
+  max-width: 1360px;
+  margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img{
+  max-width: 100%;
+  height: auto;
+}
+.menu-page .innerPageBanner{
+  background-image: url(assets/banner.jpg);
+}
+.menu-card{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.menu-card h4{
+  font-size:18px;
+  margin-bottom: 15px;
+  font-family: 'Questrial', sans-serif;
+}
+.content-wrapper-3{
+  flex: 33.33% ;
+  padding: 0 15px;
+}
+@media (max-width:990px) {
+  .d-flex{
+    flex-direction: column;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  h2{
+    padding-bottom: 16px;
+    font-size: 30px;
+}
+.p-2{
+  padding: 1.5rem 0;
+}
 }

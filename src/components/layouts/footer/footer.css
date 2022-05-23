@@ -1,0 +1,18 @@
+footer{
+    background-color: #3c434e;
+    text-align: center;
+}
+footer h4{font-size:30px; color: #fff; padding-bottom: 25px; font-family: 'PT Sans', sans-serif;}
+footer p, footer .link, footer .media-wrap li a{ font-size: 18px; color: rgba(255,255,255,.5);}
+footer .quote{font-size: 22px;}
+footer .logo{font-size: 32px; font-weight: bold; color: #fff; display: block; padding-bottom: 25px;text-transform: uppercase; font-family: 'Questrial', sans-serif;}
+footer .hours{line-height: 30px;}
+footer .media-wrap{justify-content: center;}
+
+@media (max-width:990px){
+    footer p{max-width: 50%; margin: 0 auto;}
+    footer .content-wrapper-3:not(:last-child){
+        margin-bottom: 30px;
+    }
+    footer .hours{padding-bottom: 0;}
+}

@@ -1,0 +1,34 @@
+.aboutus{background: url(../../assets/knife.png); background-repeat: no-repeat; background-position: center; background-size: 60px; background-color: #eeeeee80; padding: 10rem 0;}
+.aboutus .content-wrapper{max-width: 500px; margin: 0 auto;}
+
+
+@media (max-width:1199px){
+    .aboutus .content-wrapper{
+        max-width: 380px;
+    }
+}
+@media (max-width:990px){
+    .aboutus{
+        padding: 5rem 0;
+        background-size: 50px;
+        flex-direction: row;
+    }
+    .aboutus .content-wrapper{
+        max-width: 280px;
+    }
+}
+
+@media (max-width:668px) {
+    .aboutus{
+        flex-direction: column;
+        background-image: none;
+        padding: 2rem 0;
+    }
+    .aboutus .content-wrapper{
+        max-width: 100%;
+        flex: 100%;
+    }
+    .aboutus .content-wrapper:first-child{
+        margin-bottom: 30px;
+    }
+}

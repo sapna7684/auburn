@@ -1,0 +1,23 @@
+.subscribe{
+    text-align: center;
+    background-color: #eeeeee80;
+}
+.subscribe input{
+    height: 50px;
+    padding: 15px;
+    border-radius: 4px;
+    max-width: 100%;
+    border: 1px solid #000;
+    margin-right: 20px;
+}
+
+@media (min-width:990px){
+    .subscribe input{
+        min-width: 700px;
+    }
+}
+@media (max-width:320px){
+    .subscribe input{
+        margin: 0 0 15px;
+    }
+}

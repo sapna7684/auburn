@@ -1,0 +1,62 @@
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    transition: .5s ease;
+}
+header.active{background-color: rgba(0,0,0,.5);}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.brand-logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+    font-size: 32px;
+}
+.brand-logo a{color: #fff;}
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.navbar ul{margin: 0; padding: 0; list-style: none; font-family: 'Questrial', sans-serif; font-size: 18px;}
+.navbar ul li{padding: 15px 0;}
+.navbar ul li a{color: #fff; border-bottom: 2px solid transparent; transition: all .2s ease;}
+.navbar .navMenu li a:hover{border-color: #fff;}
+.media-wrap{display: flex;align-items: center;}
+.media-wrap li{padding:  15px 15px 0;}
+.toggleMenu{z-index: 9;}
+.toggleMenu svg{font-size: 36px; color: #fff;}
+
+@media (max-width:990px){
+    .media-wrap li:first-child{padding-left: 0;}
+    .navbar{position: fixed; top: 0; bottom: 0; width: 100%;height: 100vh; background-color: #000;z-index: 1; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; transition: all .2s ease;} 
+    .navbar ul li a{color: #fff;}
+    .navbar ul li a:hover{border-color: #fff;}
+    .navbar .media-wrap li{padding: 15px 15px 0;}
+}
+
+
+@media (min-width:1024px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .navbar ul {
+        display: flex;
+    }
+    .navbar ul li {padding: 0 15px;}
+    .media-wrap li{padding-top: 0;}
+    .toggleMenu{display: none;}
+}
