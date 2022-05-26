@@ -13,8 +13,12 @@
         background-size: 50px;
         flex-direction: row;
     }
-    .aboutus .content-wrapper{
+    /* .aboutus .content-wrapper{
         max-width: 280px;
+    } */
+    .aboutus .content-wrapper{
+        max-width: 100%;
+        flex: 100%;
     }
 }
 
@@ -24,10 +28,7 @@
         background-image: none;
         padding: 2rem 0;
     }
-    .aboutus .content-wrapper{
-        max-width: 100%;
-        flex: 100%;
-    }
+    
     .aboutus .content-wrapper:first-child{
         margin-bottom: 30px;
     }
