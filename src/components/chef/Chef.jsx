@@ -4,7 +4,7 @@ import './chef.css'
 
 export const Chef = () => {
     return (
-        <div className='p-2'>
+        <div className='p-2 chef'>
             <div className="container">
                 <div className="d-flex align-center">
                     <div className='content-wrapper text-right'>
