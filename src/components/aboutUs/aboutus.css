@@ -10,12 +10,9 @@
 @media (max-width:990px){
     .aboutus{
         padding: 5rem 0;
-        background-size: 50px;
+        background-image: none;
         flex-direction: row;
     }
-    /* .aboutus .content-wrapper{
-        max-width: 280px;
-    } */
     .aboutus .content-wrapper{
         max-width: 100%;
         flex: 100%;
@@ -25,7 +22,6 @@
 @media (max-width:668px) {
     .aboutus{
         flex-direction: column;
-        background-image: none;
         padding: 2rem 0;
     }
     
